@@ -6,7 +6,7 @@ const port = 443;
 var rgb;
 
 app.get('/', function(req, res) {
-    average('image.jpg', (err, color) => {
+    average('images/image.jpg', (err, color) => {
         if (err) throw err;
         rgb = color;
         res.send('Hello World' + rgb.toString());
